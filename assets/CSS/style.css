@@ -2,3 +2,47 @@
     margin: 0;
     padding: 0;
 }
+
+.grid-conteiner {
+    height: 800px;
+    display: grid;
+    grid-template-areas: 'header header'
+                         'aside main'
+                         'footer footer';
+    grid-template-rows: 8% auto 5%;
+    grid-template-columns: 20% 80%;
+       
+}
+
+.header {
+    grid-area: header;
+    border-bottom: solid 2px #9fcae84f;
+    background-color: #5781a630;
+}
+
+.aside {
+    grid-area: aside;
+    border-right: solid 2px #9fcae84f;
+    background-color: #d0d0d0;
+}
+
+.menu-lateral {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    text-align: start;
+    font-size: large;
+    color: white;
+}
+
+
+.main {
+    grid-area: main;
+    background-color: white;
+}
+
+.footer {
+    grid-area: footer;
+    border-top: solid 2px #9fcae84f;
+    background-color: #5781a630;
+}
